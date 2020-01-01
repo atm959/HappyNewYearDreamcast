@@ -1,0 +1,8 @@
+built/IP.BIN
+built/1st_read.bin
+buildfiles/output.bin
+buildfiles/HappyNewYearNewDecade2020.elf
+.vscode
+main.o
+romdisk_boot.img
+romdisk_boot.o
