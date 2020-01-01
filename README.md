@@ -3,4 +3,4 @@
 
 The music that is used is "Let's Go" by Lensko.
 
-![A screenshot of it.](/VirtualBox_gudLRcF2Qu.png)
+![A screenshot of it.](/nullDC_Win32_Release-NoTrace_VSeSPyVeme.png)
