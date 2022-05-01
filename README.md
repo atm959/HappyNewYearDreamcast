@@ -3,4 +3,4 @@
 
 To compile it, you need KalistiOS installed.
 
-![A screenshot of it.](/nullDC_Win32_Release-NoTrace_VSeSPyVeme.png)
+![A screenshot of it.](/w5OrwavZyg.png)
