@@ -23,10 +23,6 @@ char year[7] = {
 	3, 5, 1, 7, 12
 };
 
-char decade[7] = {
-	8, 5, 9, 1, 8, 5, 12
-};
-
 char twentytwentyone[5] = {
 	10, 11, 10, 13, 12
 };
@@ -89,10 +85,10 @@ void drawLetter(int xPos, int yPos, int index, int size){
 	pvr_poly_cxt_t cxt;
     pvr_poly_hdr_t hdr;
     pvr_vertex_t vert;
-	
+
 	float u, v, u2, v2;
     int x, y, x2, y2;
-	
+
 	pvr_poly_cxt_txr(&cxt, PVR_LIST_TR_POLY, PVR_TXRFMT_ARGB4444, 64, 64, letterTex, PVR_FILTER_NEAREST);
 	pvr_poly_compile(&hdr, &cxt);
 	pvr_prim(&hdr, sizeof(hdr));
@@ -162,12 +158,12 @@ void drawFrame() {
 	for(int i = 0; i < 5; i++){
 		drawLetter(((25 + (5 * 32) + 75) + (3 * 32) + 75) + (i * 35) + (5 * sin((i * 5) + t * 0.1f)), 132 + (5 * cos((i * 5) + t * 0.1f)), year[i], 32);
 	}
-	
+
 	//2021!
 	for(int i = 0; i < 5; i++){
 		drawLetter(150 + (i * 67) + (5 * sin((i * 5) + t * 0.1f)), 300 + (5 * cos((i * 5) + t * 0.1f)), twentytwentyone[i], 64);
 	}
-	
+
     pvr_list_finish();
 
     pvr_scene_finish();
@@ -180,10 +176,10 @@ int main(void) {
 
     /* init kos  */
     pvr_init_defaults();
-	
+
 	backgroundTex = pvr_mem_malloc(512 * 512 * 2);
     png_to_texture("/rd/imgs/background.png", backgroundTex, PNG_NO_ALPHA);
-	
+
 	letterTex = pvr_mem_malloc(16 * 16 * 2);
     png_to_texture("/rd/imgs/letters.png", letterTex, PNG_FULL_ALPHA);
 
@@ -193,7 +189,7 @@ int main(void) {
 
     while(1) {
         drawFrame();
-	    
+
 		t++;
     }
 
