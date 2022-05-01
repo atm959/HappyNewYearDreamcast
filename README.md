@@ -1,4 +1,4 @@
-# HappyNewYear2020-Dreamcast
+# HappyNewYearDreamcast
  A little thing for the new years since 2020, for the Dreamcast.
 
 To compile it, you need KalistiOS installed.
